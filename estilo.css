@@ -1,24 +1,31 @@
-* { padding: 0;
-    box-sizing: border-box;
+* {  padding: 0px; /* comineza la pagina sin dejar espacios del arriba*/
+    box-sizing: border-box; 
+    min-width: 500;
+    box-sizing: border-box; /* Establece que la caja tiene borde*/
+}
 
-}
-html {
-    font-size: 1rem;
-    height: 100%;
-}
 
 
 body, header, main, footer {
    
-    min-height: 50px;
-    min-width: 500px;
-    margin: 1.20 rem;
+    min-height: 50px;  /* Establece un alto mínimo de 50 pixels */
+    min-width: 480px; /* Establece un ancho mínimo de 480 pixels */
+    margin: 1.20 rem;  /* Establece un margen de 1.20 rems */
     margin-top: 0.5rem;
     margin-left: 0.5rem;
-  
+    /* background-color: lightcoral;  */
    
 }
 
+.grid-item{
+    border: 1px blue solid;
+    min-height: 180 px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 100%; /* Estavlece separacion enre areas */
+    overflow: auto;
+}
 
 
 .seccion{
@@ -30,9 +37,9 @@ body, header, main, footer {
     width: 100%;
     overflow: auto;
 }
-.seccion2{
+.gif-container{
     /* border: 2px green solid; */
-
+    width: 40%;
   
     margin: 0.50rem;
     height: 100%;
@@ -42,7 +49,21 @@ body, header, main, footer {
     width: 30%;
     overflow: auto;
 }
+.titulo {
+   
+    font-size: 20px; /* se destaca mas el titulo */
+    font-weight: bold;
 
+}
+.domicilio {
+   
+    font-size: 15px; /* se destaca mas el titulo */
+    font: italic;
+}
+.descripcion {
+    white-space: normal; /* No permite que el texto se corte en varias líneas */
+    font-size: 18px; /* Tamaño de fuente del texto */
+  }
 
 .header-menubar li a{
     font-size: 1.3rem;
@@ -66,7 +87,7 @@ main{
 body{
     min-height: 500px;
 }
-
+/*
 .cont{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -78,4 +99,54 @@ body{
     padding: 20px;
     font-size: 30px;
     text-align: center;
+}*/
+
+body{  background-color: lightcoral; }
+ @media (max-width: 480px) {
+        body {
+        background-color: lightgray;
+        }
+        .imagen-responsive {
+        display: block; /* Muestra la imagen como bloque */
+        max-width: 100%; /* Ancho máximo de la imagen es el 100% del contenedor */
+        height: auto; /* Altura automática proporcional a la anchura */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+      }
+
+        .grid-container {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: auto;
+        padding: 10px; }
+
+
+        .gif-container{
+            width: 40%;}
+     }   
+    @media (min-width: 760px) {
+        body {
+        background-color: lightskyblue;   
+        }  
+
+        .imagen-responsive {
+            max-width: 150px; /* Ancho máximo de la imagen es el 100% del contenedor */
+            height: 150px; /* Altura automática proporcional a la anchura */
+    }
+    .gif-container{
+            width: 10%;}
+
+    .grid-container {
+       display: grid;
+       row-gap: 20px;
+       grid-template-columns: auto auto auto;  
+       background-color: #2196F3;
+       padding: 10px; }
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: left;
 }
