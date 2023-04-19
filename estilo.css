@@ -87,19 +87,6 @@ main{
 body{
     min-height: 500px;
 }
-/*
-.cont{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 50px;
-    padding: 10px;
-}
-
-.item{
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}*/
 
 body{  background-color: lightcoral; }
  @media (max-width: 480px) {
@@ -117,11 +104,12 @@ body{  background-color: lightcoral; }
         display: grid;
         row-gap: 20px;
         grid-template-columns: auto;
-        padding: 10px; }
+        padding: 10px; 
+        }
 
 
         .gif-container{
-            width: 40%;}
+            width: 40%;} /* Marca el ancho del gif animado para width <480px*/
      }   
     @media (min-width: 760px) {
         body {
@@ -133,7 +121,8 @@ body{  background-color: lightcoral; }
             height: 150px; /* Altura automática proporcional a la anchura */
     }
     .gif-container{
-            width: 10%;}
+            width: 10%; /* Marca el ancho del gif animado para width >760px*/
+          }
 
     .grid-container {
        display: grid;
@@ -144,9 +133,9 @@ body{  background-color: lightcoral; }
     }
 
     .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        font-size: 20px;
-        text-align: left;
+        background-color: rgba(255, 255, 255, 0.8); /*color de fondo del contenedor */
+        border: 1px solid rgba(0, 0, 0, 0.8); /*borde del contenedor */
+        padding: 20px;  /* margen dentro del contenedor */
+        font-size: 20px; /* distancia entre los contenidos*/
+        text-align: left; /* alinea el contenido del item a izquierda*/
 }
