@@ -9,25 +9,6 @@
     <title>titulo</title>
 <link rel="stylesheet" href="estilo.css">
 
-<style>
-  body{
-
-background-color: lightcoral;
-  }
-@media (max-width: 600px) {
-    body {
-        background-color: lightgray;
-    }
-   
-    }
-    @media (min-width: 1000px) {
-    body {
-        background-color: lightskyblue;}
-
-}
-
-
-</style>
 
 
 </head>
@@ -41,7 +22,7 @@ background-color: lightcoral;
         <li><a href="index.html"> Inicio </a></li>
         <li><a href="Gastronomia.html"> Gastronimia </a></li>
         <li><a href="Turismo.html" >Turismo </a></li>
-        <li><a href="Reserva.html" >Reserva </a></li>
+        <!-- <li><a href="Reserva.html" >Reserva </a></li> -->
        
     </ul>
     </nav>
@@ -52,7 +33,7 @@ background-color: lightcoral;
 
 
 
-<form action="/action_page.php" method="get" target="_blank">
+<form action="/action_page.php" method="get" target="_blank" id="formureserva">
   <label for="Paseo">Paseo a reservar:</label>
   <select id="paseo" name="cars">
     
@@ -67,12 +48,22 @@ background-color: lightcoral;
   <label for="lname">Apellido:</label>
   <input type="text" id="apellido" name="Apellido"><br><br>
 
+  <label for="cant">Cantidad de personas:</label>
+  <input type="text" id="Cantidad de personas:" name="cant"><br><br>
+
   <label for="Contacto">Contacto:</label>
   <input type="text" id="contacto" nombre="contacto"><br><br>
 
-  <input type="submit" value="Submit using GET">
-  <input type="submit" formmethod="post" value="Submit using POST">
+  <!-- <button type="submit" form="Reserva.html" value="Submit">Confirmar Reserva</button> -->
+  <button onclick="myFunction()">Reservar</button>
+
 </form>
+
+<script>
+  function myFunction() {
+    alert("Confirma Reserva?");
+  }
+  </script>
 
 </body>
 </html>

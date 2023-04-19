@@ -6,43 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport content="width=device-width, initial-scale=1.0">
     <title>titulo</title>
-<link rel="stylesheet" href="CSS/estilo.css">
-<head>
-<style>
+<link rel="stylesheet" href="estilo.css">
 
-    
-  body{
 
-background-color: lightcoral;
-  }
-@media (max-width: 600px) {
-    body {
-        background-color: lightgray;
-    }
-   
-    }
-    @media (min-width: 1000px) {
-    body {
-        background-color: lightskyblue;}
-
-}
-
-.grid-container {
-  display: grid;
-  row-gap: 20px;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 20px;
-  text-align: left;
-}
-</style>
 </head>
 
 
@@ -57,7 +23,7 @@ background-color: lightcoral;
             <li><a href="index.html"> Inicio </a></li>
             <li><a href="Gastronomia.html"> Gastronomia </a></li>
             <li><a href="Turismo.html" >Turismo </a></li>
-            <li><a href="Reserva.html" >Reserva </a></li>
+            <!-- <li><a href="Reserva.html" >Reserva </a></li> -->
            
         </ul>
         </nav>
@@ -68,14 +34,17 @@ background-color: lightcoral;
        <main>
 
         
-    <section class="seccion2">
-        <div class="tenor-gif-embed" data-postid="12877942" data-share-method="host" data-aspect-ratio="1" data-width="40%"><a href="https://tenor.com/view/buenos-aires-ciudad-de-buenos-aires-obelisco-9de-julio-gif-12877942">Buenos Aires Ciudad De Buenos Aires GIF</a>from <a href="https://tenor.com/search/buenos+aires-gifs">Buenos Aires GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js" ></script> 
+    <section class="gif-container">
+        <div class="tenor-gif-embed" data-postid="12877942" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+        <a href="https://tenor.com/view/buenos-aires-ciudad-de-buenos-aires-obelisco-9de-julio-gif-12877942">Buenos Aires Ciudad De Buenos Aires GIF</a>from <a href="https://tenor.com/search/buenos+aires-gifs">Buenos Aires GIFs</a></div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js" ></script> 
+    </section>
 
-           
-     </section>
+
+
 <div>
-     <h1>Lugares para visitar en Buenos Aires </h1>
-     <p>Podes Reservar tu visita aqui</p>
+     <h1>Bares y Restaurantes de  Buenos Aires </h1>
+     <p>Podes Reservar aqui</p>
      <p>.</p>
      <p>.</p>
      <p>.</p>
@@ -83,45 +52,77 @@ background-color: lightcoral;
 
 
 <div class="grid-container">
-  <div class="grid-item">
-    <p>Obelisco</p>  
-    <img src="Obelisco.jpg" alt="obelisco" width=100" height="100">
-    <button type="button">Reservar</button>
+<!-- Primer opcion de gastronomia -->
+    <div class="grid-item">
+        <p class=titulo>Guerrin</p>  
+        <!-- <img src="guerrin.jpg" alt="Guerrin" width="100" height="100">  -->
+        <img src="guerrin.jpg" alt="Guerrin" class="imagen-responsive">
+
+        <p class="domicilio">Av. Corrientes 1368, C1043 CABA</p>
+
+        <a href="Reserva.html">
+            <button type="button">Reservar</button>
+        </a>
     <div>
-        <p>El Obelisco de Buenos Aires es un monumento histórico, considerado un ícono de la Ciudad de Buenos Aires, la capital de Argentina. Tiene una longitud de 67,5 metros, y de estos 63 metros son desde la base de 7 x 7 m hasta el inicio del ápice 3,50 x 3,50mts. Culminando con una punta del estilo Roma de unos 40 cm.</p>
-    </div>
-  </div>
-  <div class="grid-item">
-    <p>Casa Rosada</p> 
-    <img src="casarosada.jpg" alt="Casa Rosada" width=100" height="100">
-    <button type="button">Reservar</button>
-    <div>
-        <p>La Casa Rosada es la sede del Poder Ejecutivo de la República Argentina, y está ubicada en el centro-histórico de la ciudad capital federativa de Buenos Aires.​ Dentro de la misma se encuentra el despacho del presidente de la Nación Argentina y de sus distintas secretarías, y del Jefe de Gabinete de Ministros.</p>
-      </div>
-  </div>
-  <div class="grid-item">
-    <p>Torre Monumental</p> 
-            
-    <img src="torre.jpg" alt="Torre Monumental" width=100" height="100">
-    <button type="button">Reservar</button>
-    <div>
-    <p>La Torre Monumental es un monumento situado en el barrio de Retiro, en Buenos Aires. Situada en la plaza Fuerza Aérea Argentina junto a la calle San Martín y la avenida del Libertador. Fue construida por residentes británicos en la ciudad para conmemorar el centenario de la Revolución de Mayo</p>
+        <p class=descripcion>Es una pizzería tradicional con una pizza maravillosa, Nada elegante, es un lugar fantástico, Tanto la pizza a la piedra como la fugazzeta son muy recomendables</p>
    </div>
-  </div>  
+
+
+  </div>
+
+<!-- Segunda opcion de gastronimia -->
   <div class="grid-item">
-    <p>OLYMPO SKYBAR</p>
-    <img src="olimpobar1.jpg" alt="OLYMPO SKYBAR" width=100" height="100">
-    <button type="button">Reservar</button>
-    <p>Roof top, sky bar, en definitiva, un restaurante donde la vista suma un plus a la propuesta gastronómica. En este concepto se enrola el recientemente inaugurado Olympo, que emplazado en el piso 31 del edicicio Lex Tower (Corrientes y Paraná) se destaca por su cuidada coctelería.</p>
+    <p class=titulo>Cafe Tortoni</p> 
+    <!-- <img src="tortoni.jpg" alt="Cafe Tortoni" width="100" height="100">  -->
+    <img src="tortoni.jpg" alt="Cafe Tortoni" class="imagen-responsive">
+
+    <p class="domicilio"> Av. de Mayo 825, C1084 CABA</p>
+
+    <a href="Reserva.html">
+        <button type="button">Reservar</button>
+    </a>
+
+    <div>
+       <p class=descripcion>El Café Tortoni, ubicado en el 825 de la Avenida de Mayo, es un establecimiento comercial histórico de la Ciudad de Buenos Aires, Argentina.</p>  
+    </div>
+
+  </div>
+  
+  <!-- Tercera opcion de gastronimia -->
+  <div class="grid-item">
+    <p class=titulo>La Biela</p> 
+    <!-- <img src="labiela.jpg" alt="La Biela" width="100" height="100">  -->
+    <img src="labiela.jpg" alt="La Biela" class="imagen-responsive">
+
+    <p  class="domicilio">Av. Pres. Manuel Quintana 596, C1129 CABA</p>
+    
+    <a href="Reserva.html">
+        <button type="button">Reservar</button>
+    </a>
+    <div>
+        <p class=descripcion>Restaurante histórico luminoso especializado en platos principales clásicos argentinos, ensaladas y sándwiches</p>
+    </div>
+  </div>  
+
+<!-- Cuarta opcion de gastronimia -->
+  <div class="grid-item">
+    <p class=titulo>Los Inmortales</p>
+    <!-- <img src="losinmortales.jpg" alt="Los Inmortales" width="100" height="100">  -->
+    <img src="losinmortales.jpg" alt="Los Inmortales" class="imagen-responsive">
+    <p  class="domicilio">Av. Corrientes 1369, C1043 CABA</p>
+
+    <a href="Reserva.html">
+        <button type="button">Reservar</button>
+    </a>
+
+    <div>
+        <p class=descripcion>Los Inmortales: Clásica pizzería del centro porteño. Lugar con muchísima historia, por la cantidad de personajes de la cultura nacional que han pasado por allí.</p>
+    </div>
     
   </div>
 
 
-  <!-- <div class="grid-item">5</div> -->
-  <!-- <div class="grid-item">6</div>   -->
-  <!-- <div class="grid-item">7</div> -->
-  <!-- <div class="grid-item">8</div> -->
-  <!-- <div class="grid-item">9</div>   -->
+ 
 </div>
 </main>
 </body>
