@@ -1,5 +1,5 @@
 # TurismoG16
-TPO curso de Python
+
 <h1 align="center">Ho,a 👋, soyI'm Graciela Bosco</h1>
 <h3 align="center">Soy apacionada en big data, analisis de datos y la generación de dashboards</h3>
 
