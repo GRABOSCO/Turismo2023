@@ -1,9 +1,9 @@
-# TurismoG16
-
 <h1 align="center">Ho,a 👋, soyI'm Graciela Bosco</h1>
 <h3 align="center">Soy apacionada en big data, analisis de datos y la generación de dashboards</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=grabosco" alt="grabosco" /></a> </p>
+
+- 👨‍💻 Mis proyectos [https://grabosco.github.io/TurismoG16/](https://grabosco.github.io/TurismoG16/)
 
 - 📫 Pueden escribirme **graciela.bosco@gmail.com**
 
